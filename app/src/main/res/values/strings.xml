@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Funnect</string>
+    <string name="account">Don\'t you have an account yet?  <font color="#FFE91E63"><b><u><i>Signup</i></u></b></font></string>
+</resources>

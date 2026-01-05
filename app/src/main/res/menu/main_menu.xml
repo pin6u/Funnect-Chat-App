@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/editProfileItem"
+        android:title="Edit Profile"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/signOutItem"
+        android:title="Sign Out"
+        app:showAsAction="never" />
+
+    <!-- ✅ New Menu Item for Offline Mesh Chat -->
+    <item
+        android:id="@+id/menu_nearby_chat"
+        android:title="Nearby Chat"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/offlineGamesItem"
+        android:title="Offline Games"
+        app:showAsAction="never" />
+
+
+</menu>

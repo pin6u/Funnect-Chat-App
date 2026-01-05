@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:padding="3dp"
+    android:gravity="start">
+
+    <!-- Date Header on Top -->
+    <TextView
+        android:id="@+id/dateHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray"
+        android:textSize="12sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="4dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="start">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_shape_received_messages"
+            android:padding="8dp">
+
+            <!-- Text Message -->
+            <TextView
+                android:id="@+id/textViewMessageReceived"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Received Message"
+                android:textSize="18sp"
+                android:textColor="?attr/colorOnSecondary"
+                android:visibility="gone" />
+
+            <!-- Image Message -->
+            <ImageView
+                android:id="@+id/imageViewMedia"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="6dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+
+            <!-- PDF Message -->
+            <LinearLayout
+                android:id="@+id/pdfContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="6dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_pdf" />
+
+                <TextView
+                    android:id="@+id/textViewPdfName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Document.pdf"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+
+            <!-- Deleted Message -->
+            <TextView
+                android:id="@+id/textViewDeletedMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This message was deleted."
+                android:textStyle="italic"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16sp"
+                android:paddingTop="4dp"
+                android:visibility="gone" />
+
+            <!-- Time -->
+            <TextView
+                android:id="@+id/textViewTimeReceived"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10:05 AM"
+                android:textSize="12sp"
+                android:layout_gravity="start"
+                android:textColor="@android:color/darker_gray"
+                android:paddingTop="4dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
